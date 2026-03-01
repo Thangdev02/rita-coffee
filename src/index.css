@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-rita-black text-rita-cream font-body;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { @apply bg-rita-cement; }
+  ::-webkit-scrollbar-thumb { @apply bg-rita-pink rounded-full; }
+  ::selection { background: rgba(232, 87, 122, 0.3); color: #f0ebe3; }
+}
+
+@layer components {
+  .grain-overlay::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.45;
+    mix-blend-mode: overlay;
+  }
+
+  .text-pink-gradient {
+    background: linear-gradient(135deg, #e8577a, #f07898, #e8577a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-cement-gradient {
+    background: linear-gradient(135deg, #f0ebe3, #d4cdc5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .pink-border { border: 1px solid rgba(232, 87, 122, 0.3); }
+  .cement-border { border: 1px solid rgba(58, 54, 51, 0.9); }
+
+  .glass-card {
+    background: rgba(30, 28, 27, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(58, 54, 51, 0.8);
+  }
+
+  .section-title {
+    @apply font-heading text-4xl md:text-6xl font-normal leading-tight;
+  }
+
+  .price-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-mono font-medium;
+    background: rgba(232, 87, 122, 0.12);
+    border: 1px solid rgba(232, 87, 122, 0.35);
+    color: #f07898;
+  }
+}
+
+@layer utilities {
+  .text-shadow-pink { text-shadow: 0 0 50px rgba(232, 87, 122, 0.5); }
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 28s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(14px);
+  background: rgba(8, 7, 7, 0.88);
+}
+
+.pink-glow {
+  box-shadow: 0 0 60px rgba(232, 87, 122, 0.18), 0 0 120px rgba(232, 87, 122, 0.07);
+}
