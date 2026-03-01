@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000',
+  baseURL: import.meta.env.VITE_API_URL || 'https://my-project-d6i8e2-rita-cafe-api.tose.sh',
   timeout: 5000,
 })
 
