@@ -41,12 +41,12 @@ export default function HomePage() {
         <AnimatePresence mode="wait">
           {banner && (
             <motion.div key={activeBanner} className="absolute inset-0"
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2 }}>
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.5 }}>
               <motion.img src={banner.image} alt={banner.title}
                 className="w-full h-full object-cover" style={{ y: heroY, scale: heroScale }} />
               {/* Cement-toned overlay */}
               <div className="absolute inset-0" style={{
-                background: 'linear-gradient(to bottom, rgba(14,13,13,0.35) 0%, rgba(14,13,13,0.15) 40%, rgba(14,13,13,0.95) 100%)'
+                background: 'linear-gradient(to bottom, rgba(14,13,13,0.35) 0%, rgba(14,13,13,0.15) 80%, rgba(14,13,13,0.95) 100%)'
               }} />
               <div className="absolute inset-0" style={{
                 background: 'linear-gradient(to right, rgba(14,13,13,0.8) 0%, rgba(14,13,13,0.3) 50%, transparent 100%)'
@@ -157,7 +157,7 @@ export default function HomePage() {
                 style={{ background: '#e8577a' }} />
               <div className="relative rounded-3xl overflow-hidden h-[520px]"
                 style={{ border: '1px solid rgba(58,54,51,0.8)' }}>
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
+                <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/577766949_122139730784940477_4349435687417446703_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=wbMbNnUuB_UQ7kNvwEhFmP9&_nc_oc=AdlEZekkVyV8tulGENSsE_nLF-P1NRlw8YnSIZMOhoA6pTELkBSKClE09mXUXXEQDIU&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=X_J_-fJYReY8nGqm8jO64g&_nc_ss=8&oh=00_AfzU_a8IbfXomDDICuuCIT50wTt7tUkr1iu6D3KSWCn1KQ&oe=69AB3A03"
                   alt="Rita Cafe" className="w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(14,13,13,0.6), transparent 50%)' }} />
               </div>
@@ -171,7 +171,7 @@ export default function HomePage() {
                 <div className="font-heading text-4xl mb-1" style={{
                   background: 'linear-gradient(135deg, #e8577a, #f07898)',
                   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
-                }}>5★</div>
+                }}>4.9★</div>
                 <div className="text-rita-muted text-xs">Google Reviews</div>
                 <div className="flex gap-0.5 mt-2">
                   {Array(5).fill(0).map((_, i) => (
@@ -192,7 +192,7 @@ export default function HomePage() {
                 </span>
               </h2>
               <p className="text-rita-muted leading-relaxed mb-6">
-                RITA Cafe & Bistro là không gian cộng đồng tại Rạch Giá, nơi mỗi tách cà phê được pha chế với tâm huyết. Từ hạt Arabica Đà Lạt đến Matcha Uji nhập từ Nhật Bản — chúng tôi cam kết mang đến hương vị đỉnh cao.
+                Rita Cafe & Bistro là một quán cà phê thư giãn ở Rạch Giá với không gian ấm cúng và thoải mái, phục vụ đa dạng đồ uống, thức ăn sáng và các món ăn nhẹ hấp dẫn. Đây là điểm lý tưởng để trò chuyện, nghỉ ngơi hay thưởng thức bữa sáng nhẹ cùng bạn bè trong bầu không khí dễ chịu.
               </p>
               <p className="text-rita-muted leading-relaxed mb-10">
                 Không chỉ là quán cà phê — RITA còn có <strong className="text-rita-pink">Khu Vui Chơi Dino</strong> dành riêng cho bé, tạo không gian hoàn hảo cho cả gia đình.
@@ -200,8 +200,8 @@ export default function HomePage() {
 
               <div className="grid grid-cols-3 gap-4 mb-10">
                 {[
-                  { num: '50+', label: 'Thức uống' },
-                  { num: '5★', label: 'Đánh giá' },
+                  { num: '25+', label: 'Thức uống' },
+                  { num: '4.9★', label: 'Đánh giá' },
                   { num: '∞', label: 'Kỷ niệm' },
                 ].map(({ num, label }) => (
                   <div key={label} className="text-center py-4 rounded-2xl" style={{ background: '#1e1c1b', border: '1px solid rgba(58,54,51,0.8)' }}>
@@ -268,8 +268,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             { icon: FiMapPin, title: 'Địa Chỉ', value: 'Rạch Giá, Kiên Giang', sub: 'Gần trung tâm thành phố', color: '#e8577a' },
-            { icon: FiClock, title: 'Giờ Mở Cửa', value: '07:30 — 22:30', sub: 'Mở cửa 7 ngày / tuần', color: '#82b4ff' },
-            { icon: FiWifi, title: 'WiFi Miễn Phí', value: 'RITA_CAFE', sub: 'Pass: ritacafe2024', color: '#5cd68c' },
+            { icon: FiClock, title: 'Giờ Mở Cửa', value: '07:30am — 22:30pm', sub: 'Mở cửa 7 ngày / tuần', color: '#82b4ff' },
+            { icon: FiWifi, title: 'WiFi Miễn Phí', value: 'RITA_CAFE', sub: 'Pass: chucbanhanhphuc', color: '#5cd68c' },
           ].map(({ icon: Icon, title, value, sub, color }, i) => (
             <ScrollReveal key={i} delay={i * 0.1}>
               <motion.div
@@ -310,7 +310,7 @@ export default function HomePage() {
                 Khu Vui Chơi <br /><span className="text-green-400">Dino</span> Cho Bé
               </h2>
               <p className="text-rita-muted leading-relaxed mb-4">
-                Để bé thỏa sức khám phá thế giới khủng long trong khi bạn nhâm nhi tách cà phê yêu thích.
+              Để bé thỏa sức khám phá mỗi ngày trong lúc ba mẹ thư giãn cùng tách cà phê yêu thích
               </p>
               <div className="flex items-center gap-3 mb-8">
                 <span className="font-heading text-5xl text-green-400">50.000đ</span>

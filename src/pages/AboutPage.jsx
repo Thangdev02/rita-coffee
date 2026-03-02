@@ -18,12 +18,12 @@ const team = [
 ]
 
 const gallery = [
-  'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80',
-  'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80',
-  'https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80',
-  'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&q=80',
-  'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80',
-  'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80',
+  'https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/566244722_122136245912940477_251351123306886708_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=LAgBmG8Wqp8Q7kNvwEvzQNg&_nc_oc=AdlZ3E17iaxFFhAY-TDRNIZmbCvfHJUCoiDPk0iZh3yWS7-xGmONX5dAkZu74X73T5rBaDZjCeRH6L6-UsrFEEfb&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=298gQ5H4dKsZyi3yqLx_yg&_nc_ss=8&oh=00_AfxIw0_In2LvVUgIfWY_K7vwXze30wInUSrVFmVijdaJCg&oe=69AB47B9',
+  'https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/566218817_122136245924940477_5932915205030654329_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=2N8MzpDQGIQQ7kNvwGK1x6r&_nc_oc=AdlTcZ9K6I68LtDjA39k4Tm1-I0s0v7txXD70Z44JkGEZyCV6KNNGn4z5vGq3N6x-NiSTd-pPvASg4ySUAjcxjDd&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=eyVKmotA7QmN7Jabqotg3w&_nc_ss=8&oh=00_AfxBlJsnVRUYiaF9xdOQ-6E09lc-eepAOCt2XsIYFkXykQ&oe=69AB565A',
+  'https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/561635965_122135392310940477_5042190149285523966_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=1wlG-PWBsxsQ7kNvwECKcE-&_nc_oc=AdmH38x6UaJk-EypE_UWWw9Rkbiv2PgiXafBb9K8XKIeuWvYzEvdn_Pka4MfVl5lGqMsfdiUWhCy2e9wnwPSCpTW&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=c57nJcTK8upHwpRh34a7_g&_nc_ss=8&oh=00_AfwS8L2pPi1FYlrgscIcjKmiJ-30A9KtOjDW5nZ3wiLvwg&oe=69AB6EBD',
+  'https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/565654697_122135392280940477_7665161169909051769_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=0XLCM_LwCjkQ7kNvwHnCnm8&_nc_oc=Admq2uf6jKZqz_mlmITcX53CjI5JHVJy-FRhIuuImoDtWOgy2CDydmcEJ1yjnQA3Rt-9kO2ie4dHG3Epl7n0kFtZ&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=TgNQJgHzqabxGXDqrVOpDA&_nc_ss=8&oh=00_AfwS2N_ZOdhZSuo_VTpUCmYsSe_urAP3wubOYxbiBjcq2w&oe=69AB5ACF',
+  'https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/561870846_122135392268940477_2652091734855104126_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=4pIkGSFWH_UQ7kNvwFGvIpk&_nc_oc=Adm9Sp3VRfg9-soKKGTc4At0xsk1IbdDgsZTwBjyVK1oP0XUm9LrK1lE65u3V9CNG0niMxZKkhbIjr7Vtfap0zXT&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=D26NUGSdc2TBwRkaKyWzYg&_nc_ss=8&oh=00_AfwLHUqRRznBq8zvs0gaV-jBJKviEjZzGgTeJau1eHOqXQ&oe=69AB68F7',
+  'https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/561386026_122135004644940477_7353898514917993327_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=2a1932&_nc_ohc=EqRIs0JNfhwQ7kNvwFnPvIw&_nc_oc=AdlG4KBGzdnlbx6N_5MP9GNmkNLR3gp2q4LFldb48pMGMvW6TOUBJdF8qY2V7NL0xEOJUuCAgaT35u7SdNI27ccQ&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=pXVVLtpyYgMP_456S5WesA&_nc_ss=8&oh=00_Afy2fw9hryhO4FCZnEXT6SqQnWZQgqAZ6gtrvmtry4TEOQ&oe=69AB4E1A',
 ]
 
 export default function AboutPage() {
@@ -37,7 +37,7 @@ export default function AboutPage() {
       {/* ── HERO ── */}
       <div ref={heroRef} className="relative h-screen overflow-hidden flex items-center">
         <motion.div className="absolute inset-0" style={{ y: bgY }}>
-          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=1920&q=80"
+          <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/571038976_122137331312940477_2951143956497828272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=rsaY9TRkvhsQ7kNvwHd42wX&_nc_oc=AdkVyHjk7wuoKo40l0bzSdjoXj1a5RC2IZxOVsL1KGLQiiIbjmW9te0OwsfvStDjAvbpSYN2sf-EZAIAJjCSLRtk&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=JHk6CDm4vxluWB16Mi_Vrw&_nc_ss=8&oh=00_AfyLuJfhJlEzfWcazNzqPar_3DeHpWYkoUz778eqPBLV-g&oe=69AB7160"
             alt="About Rita" className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(135deg, rgba(14,13,13,0.92) 0%, rgba(14,13,13,0.6) 60%, rgba(14,13,13,0.85) 100%)'
@@ -96,12 +96,12 @@ export default function AboutPage() {
                 style={{ background: '#e8577a', width: '70%', height: '70%', left: '15%', top: '15%' }} />
               <div className="absolute top-0 left-0 w-3/4 h-3/4 rounded-3xl overflow-hidden"
                 style={{ border: '1px solid rgba(58,54,51,0.8)' }}>
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80"
+                <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/565785083_122136245936940477_658192295298575670_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9Xk0Kiui6u0Q7kNvwEwCziH&_nc_oc=AdlEflvKlDsVPnS2SgeCC8PT3oxuKD_KjH_PEyFhkE_PVCnHMeGiZ2wMaxuhoSoS8eookVtEmEEBMXe8G_xR63m9&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=mIxdb0vmJJKCx9olhq3Vvw&_nc_ss=8&oh=00_AfynuiEMX_2u67BO7Uy0coviwcjSdZxSYsCbFaTHFNrsOw&oe=69AB5284"
                   alt="Cafe interior" className="w-full h-full object-cover" />
               </div>
               <div className="absolute bottom-0 right-0 w-3/5 h-3/5 rounded-3xl overflow-hidden"
                 style={{ border: '1px solid rgba(232,87,122,0.3)' }}>
-                <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=500&q=80"
+                <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/573282457_122137331264940477_7514977026506169285_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=6QsAflJkIa8Q7kNvwHl_bUH&_nc_oc=Adll1nqXoR4kc8k7w6QsM8TZOYiwbpdsP0Wmso_3qoDVvk-P4N9lQ6UN1gcn001EpObdIfoM7RpWL3UwBFZReKq4&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=A0HSs11-wwygWa9Vu3H9wg&_nc_ss=8&oh=00_AfyzE5RrSAQXP5x465Wx-zY6BUPoVtiP2fQt-i-kDUXFiA&oe=69AB60EF"
                   alt="Coffee" className="w-full h-full object-cover" />
               </div>
               {/* Floating quote */}

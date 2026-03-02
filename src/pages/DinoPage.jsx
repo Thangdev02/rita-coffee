@@ -30,7 +30,7 @@ export default function DinoPage() {
       <div ref={heroRef} className="relative h-screen overflow-hidden flex items-center">
         <motion.div className="absolute inset-0" style={{ y: bgY }}>
           <img
-            src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=1920&q=80"
+            src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/602905158_122147648816940477_6571202529164626722_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=CTjx3He6h7IQ7kNvwEsceKc&_nc_oc=AdnEF0MqeqWibW0Z9z1PdQFzfVMAlkI8eEenUIEv4C9G84jcOCHyj0_PRIZN-Mw8BYcCApJcMEQ2pezs1Uxvqgi0&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=9zqAE9FvZXd55pw1w9gtbQ&_nc_ss=8&oh=00_Afzc0JfEYl6k3utfHswEAAF8AqcMxZvktAvt9mYS2bvfuA&oe=69AB5246"
             alt="Dino Kids Zone"
             className="w-full h-full object-cover"
           />
@@ -44,13 +44,7 @@ export default function DinoPage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <motion.div
-              className="text-8xl mb-6"
-              animate={{ y: [0, -15, 0], rotate: [0, -5, 5, 0] }}
-              transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-            >
-              🦕
-            </motion.div>
+           
             <motion.span
               className="inline-block px-4 py-2 rounded-full text-xs tracking-widest uppercase bg-green-500/20 text-green-400 border border-green-500/30 mb-6"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -79,7 +73,7 @@ export default function DinoPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
             >
-              Để bé khám phá thế giới khủng long kỳ diệu trong khi ba mẹ thư giãn cùng tách cà phê yêu thích
+             Để bé thỏa sức khám phá mỗi ngày trong lúc ba mẹ thư giãn cùng tách cà phê yêu thích
             </motion.p>
 
             <motion.div
@@ -99,8 +93,8 @@ export default function DinoPage() {
               </div>
               <div className="w-px h-12 bg-rita-border" />
               <div className="text-center">
-                <div className="font-heading text-5xl text-rita-gold">FREE</div>
-                <div className="text-rita-cream/40 text-xs tracking-wide mt-1">Phụ Huynh</div>
+                <div className="font-heading text-5xl text-rita-gold">16:00 - 21:00</div>
+                <div className="text-rita-cream/40 text-xs tracking-wide mt-1">Giờ Mở Cửa</div>
               </div>
             </motion.div>
           </motion.div>

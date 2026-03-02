@@ -178,9 +178,7 @@ export default function Navbar() {
                                     >
                                       {cat.name}
                                     </div>
-                                    <div className="text-xs mt-0.5 truncate" style={{ color: 'rgba(138,128,120,0.8)' }}>
-                                      {cat.description.slice(0, 36)}{cat.description.length > 36 ? '…' : ''}
-                                    </div>
+                                   
                                   </div>
                                   <FiArrowRight
                                     size={12}
