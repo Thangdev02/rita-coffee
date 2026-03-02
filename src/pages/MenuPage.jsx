@@ -47,7 +47,7 @@ export default function MenuPage() {
 
       <div className="max-w-7xl mx-auto px-6 pb-20">
         {/* Category cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-20">
+        {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-20">
           {categories.map((cat, i) => (
             <ScrollReveal key={cat.id} delay={i * 0.06}>
               <Link to={`/menu/${cat.slug}`} className="group block cursor-hover">
@@ -66,7 +66,7 @@ export default function MenuPage() {
               </Link>
             </ScrollReveal>
           ))}
-        </div>
+        </div> */}
 
         {/* Filter section */}
         <ScrollReveal>
