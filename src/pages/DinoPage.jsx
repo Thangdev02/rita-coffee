@@ -143,9 +143,10 @@ export default function KidsZonePage() {
           <ScrollReveal>
             <div className="rounded-3xl overflow-hidden border border-rita-border">
               <video
-                src="/videos/kids-play.mp4"
+                src="/dinovideo.mp4"
                 controls
-                className="w-full h-full object-cover"
+                className="w-full object-cover"
+                style={{height:'80vh'}}
               />
             </div>
           </ScrollReveal>

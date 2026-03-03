@@ -3,7 +3,7 @@ import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
 import { FiArrowRight, FiMapPin, FiClock, FiInstagram, FiFacebook } from 'react-icons/fi'
-
+import { SiTiktok } from "react-icons/si";
 const timeline = [
   { year: '2023', title: 'Ý Tưởng Ra Đời', desc: 'Từ tình yêu với cà phê và mong muốn tạo ra không gian cộng đồng tại Rạch Giá.' },
   { year: '2024', title: 'Khai Trương RITA', desc: 'RITA Cafe & Bistro chính thức mở cửa, mang đến không gian hiện đại giữa lòng thành phố.' },
@@ -226,9 +226,9 @@ export default function AboutPage() {
                   <div className="space-y-4">
                     {[
                       { icon: FiMapPin, text: 'Rạch Giá, Kiên Giang, Việt Nam' },
-                      { icon: FiClock, text: '07:30 AM — 10:30 PM (Mỗi ngày)' },
+                      { icon: FiClock, text: '07:30 AM — 20:30 PM (Mỗi ngày)' },
                       { icon: FiFacebook, text: 'fb.com/ritacaferachgia' },
-                      { icon: FiInstagram, text: '@ritacafe.rachgia' },
+                      { icon: SiTiktok, text: '@ritacafe.rachgia' },
                     ].map(({ icon: Icon, text }, i) => (
                       <div key={i} className="flex items-center gap-3 text-rita-muted text-sm">
                         <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"

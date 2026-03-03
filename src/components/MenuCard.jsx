@@ -3,11 +3,11 @@ import { useState } from 'react'
 import { FiHeart, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const tagColors = {
-  bestseller: { bg: 'rgba(232,87,122,0.2)', text: '#f07898', label: '🔥 Bán Chạy' },
-  popular:    { bg: 'rgba(100,160,255,0.15)', text: '#82b4ff', label: '💫 Phổ Biến' },
-  signature:  { bg: 'rgba(180,120,255,0.15)', text: '#c494ff', label: '⭐ Signature' },
-  new:        { bg: 'rgba(80,200,120,0.15)', text: '#5cd68c', label: '✨ Mới' },
-  healthy:    { bg: 'rgba(60,190,100,0.15)', text: '#3dbe64', label: '🌿 Healthy' },
+  bestseller: { bg: 'rgba(232,87,122,0.2)', text: '#f07898', label: ' Bán Chạy' },
+  popular:    { bg: 'rgba(100,160,255,0.15)', text: '#82b4ff', label: 'Phổ Biến' },
+  signature:  { bg: 'rgba(180,120,255,0.15)', text: '#c494ff', label: ' Signature' },
+  new:        { bg: 'rgba(80,200,120,0.15)', text: '#5cd68c', label: ' Mới' },
+  healthy:    { bg: 'rgba(60,190,100,0.15)', text: '#3dbe64', label: 'Healthy' },
 }
 
 const formatPrice = (price) => new Intl.NumberFormat('vi-VN').format(price) + 'đ'
@@ -259,10 +259,7 @@ function DetailModal({ item, images, tag, liked, onLike, onClose }) {
             whileTap={{ scale: 0.99 }}>
             <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(138,128,120,0.55)' }}>Chi tiết</span>
             <div className="flex items-center gap-3">
-              <div className="flex gap-1.5">
-                {item.hot && <span className="text-xs" style={{ color: '#ff9060' }}>☕</span>}
-                {item.iced && <span className="text-xs" style={{ color: '#80c0ff' }}>🧊</span>}
-              </div>
+            
               <motion.span animate={{ rotate: infoExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}
                 className="text-rita-muted text-xs">▼</motion.span>
             </div>
@@ -276,20 +273,7 @@ function DetailModal({ item, images, tag, liked, onLike, onClose }) {
                 style={{ overflow: 'hidden' }}>
                 <div className="px-5 pb-4">
                   <p className="text-sm leading-relaxed text-rita-muted mb-4">{item.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {item.hot && (
-                      <span className="px-3 py-1.5 rounded-full text-xs"
-                        style={{ background: 'rgba(255,120,50,0.1)', color: '#ff9060', border: '1px solid rgba(255,120,50,0.18)' }}>
-                        ☕ Phục vụ nóng
-                      </span>
-                    )}
-                    {item.iced && (
-                      <span className="px-3 py-1.5 rounded-full text-xs"
-                        style={{ background: 'rgba(80,160,255,0.08)', color: '#80c0ff', border: '1px solid rgba(80,160,255,0.15)' }}>
-                        🧊 Phục vụ đá
-                      </span>
-                    )}
-                  </div>
+                  
                 </div>
               </motion.div>
             )}
