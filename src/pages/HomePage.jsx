@@ -157,7 +157,7 @@ export default function HomePage() {
                 style={{ background: '#e8577a' }} />
               <div className="relative rounded-3xl overflow-hidden h-[520px]"
                 style={{ border: '1px solid rgba(58,54,51,0.8)' }}>
-                <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/577766949_122139730784940477_4349435687417446703_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=wbMbNnUuB_UQ7kNvwEhFmP9&_nc_oc=AdlEZekkVyV8tulGENSsE_nLF-P1NRlw8YnSIZMOhoA6pTELkBSKClE09mXUXXEQDIU&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=X_J_-fJYReY8nGqm8jO64g&_nc_ss=8&oh=00_AfzU_a8IbfXomDDICuuCIT50wTt7tUkr1iu6D3KSWCn1KQ&oe=69AB3A03"
+                <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/557747422_122133073412940477_6497171796653484948_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=DKZxRoMbJ9wQ7kNvwE1ZBlv&_nc_oc=AdloCPXB87jMpHtVBBFIICpxvkIJ-2mjTfD474HLThPH3E_2EWNunF1qbiaVuZW3pZM&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=VfC2vEfw46M5BDsE75UaKg&_nc_ss=8&oh=00_AfypVZ4a-q2eOfyY_9JHJ4G6aX_SN8o_ubECdGR5R9b2ZA&oe=69ACCC20"
                   alt="Rita Cafe" className="w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(14,13,13,0.6), transparent 50%)' }} />
               </div>
@@ -251,7 +251,6 @@ export default function HomePage() {
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                       style={{ background: `linear-gradient(135deg, rgba(232,87,122,0.15), transparent)` }} />
                     <div className="absolute bottom-0 p-5">
-                      <div className="text-2xl mb-1">{cat.icon}</div>
                       <h3 className="font-heading text-xl text-white group-hover:text-rita-pink transition-colors">{cat.name}</h3>
                       <p className="text-white/40 text-xs mt-1 line-clamp-1">{cat.description}</p>
                     </div>
@@ -267,7 +266,7 @@ export default function HomePage() {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { icon: FiMapPin, title: 'Địa Chỉ', value: 'Rạch Giá, Kiên Giang', sub: 'Gần trung tâm thành phố', color: '#e8577a' },
+            { icon: FiMapPin, title: 'Địa Chỉ', value: 'L11-Huỳnh Thúc Kháng, Rạch Giá', sub: 'Gần trung tâm thành phố', color: '#e8577a' },
             { icon: FiClock, title: 'Giờ Mở Cửa', value: '07:30am — 22:30pm', sub: 'Mở cửa 7 ngày / tuần', color: '#82b4ff' },
             { icon: FiWifi, title: 'WiFi Miễn Phí', value: 'RITA_CAFE', sub: 'Pass: chucbanhanhphuc', color: '#5cd68c' },
           ].map(({ icon: Icon, title, value, sub, color }, i) => (
@@ -293,7 +292,7 @@ export default function HomePage() {
       {/* ── DINO PROMO ── */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=1920&q=80"
+          <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/602905158_122147648816940477_6571202529164626722_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=CTjx3He6h7IQ7kNvwEsceKc&_nc_oc=AdnEF0MqeqWibW0Z9z1PdQFzfVMAlkI8eEenUIEv4C9G84jcOCHyj0_PRIZN-Mw8BYcCApJcMEQ2pezs1Uxvqgi0&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=9zqAE9FvZXd55pw1w9gtbQ&_nc_ss=8&oh=00_Afzc0JfEYl6k3utfHswEAAF8AqcMxZvktAvt9mYS2bvfuA&oe=69AB5246"
             alt="Dino" className="w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(14,13,13,0.95) 40%, rgba(14,13,13,0.7) 100%)' }} />
         </div>
@@ -325,6 +324,53 @@ export default function HomePage() {
         </div>
       </section>
 
+{/* ── GALLERY CHECKIN ── */}
+<section className="py-24 px-6 overflow-hidden">
+  <div className="max-w-7xl mx-auto">
+    <ScrollReveal>
+      <div className="text-center mb-14">
+        <span className="text-xs tracking-[0.3em] uppercase text-rita-pink">Check-in</span>
+        <h2 className="font-heading text-5xl md:text-7xl text-rita-cream mt-4">
+          Khoảnh Khắc{' '}
+          <span style={{ background: 'linear-gradient(135deg, #e8577a, #f07898)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            Tại RITA
+          </span>
+        </h2>
+        <p className="text-rita-muted mt-4 text-sm max-w-md mx-auto">
+          Mỗi góc quán là một khung hình — cùng lưu lại khoảnh khắc của bạn
+        </p>
+      </div>
+    </ScrollReveal>
+
+    {/* Masonry grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[180px] md:auto-rows-[200px]">
+      {[
+        { src: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/638785384_122158622528940477_8345962891384341850_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Qr9MaJLPdWcQ7kNvwGkXSOE&_nc_oc=Adlv9Snyb-BRRknoLivG87FgTwTgGR6vucuCzzVGanXfUJvNUUGS0LBPIj2yyTfLfZc&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=E6JYyexX8lmZPBtfNjdGlQ&_nc_ss=8&oh=00_Afw904Xhpx8HZb7XfA4QLbPdKL113QFv9M-rjunatcklEw&oe=69ACD971', span: 'row-span-2 col-span-1' },
+        { src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/629255264_122156494406940477_2435837664029027777_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=QuW8pEWXomQQ7kNvwEEWHMI&_nc_oc=AdkYAZElruZRHfiM0V4KegMyx3lTMZFtJuO1tFk3mxe0cAhh7t1dKq9g96EkM4RgLts&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=BbcBWsY7b2S8QMF22uJGxQ&_nc_ss=8&oh=00_AfzPqNWAt61qk4IkARFoy4VcF-NzghaFIJU5TCDVQ4BtxQ&oe=69ACC475', span: 'col-span-1' },
+        { src: 'https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/605031049_122148772016940477_4281367407026357599_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=owVfuD3aRjQQ7kNvwHpd7cJ&_nc_oc=AdmuMUUEDsNVc8_GAsTa-krsrRnGH3wqI_Aq0m8kErOWRJycadgbYK_fuArraRWJPe8&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=cmAWBxn7hrRulni5EL6Lzg&_nc_ss=8&oh=00_AfwWU_b4jf3U7f0STnxBiuq7e1se-7LuLlO25GhZhmg9mQ&oe=69ACE0A9', span: 'col-span-2 row-span-1' },
+        { src: 'https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/589394904_122143541660940477_6275595611896856971_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=kZEPt4uJhIsQ7kNvwFtESjN&_nc_oc=AdmLsjdVvlOOXdR8LsWRLpFlLc0aLza2eCwlTJZs-FIVJsoXenAK659QgxsaLeR1L0o&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=N_3sn1s6wtfPGLGGdgHJfA&_nc_ss=8&oh=00_AfzLGAymIp0L5Tz5A02h_qvYDmkJr2Y0X6Bt60P8wTaXsQ&oe=69ACC0C3', span: 'col-span-1' },
+        { src: 'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/591637776_122143443134940477_5713140650747473156_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=KfYYgi34YpAQ7kNvwEJGXai&_nc_oc=AdnQ5uQcwJV03QGwRHDELHBFwr9rSbC4qDydZWNC7uRNTD3FC2bq82U69l0XxFiqXTI&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=KUDfRHTDln6IxczSoj3PYQ&_nc_ss=8&oh=00_AfzzwrraGdeCBtHsZvxCn_YRGkFWhgXo25En9iLsxMsDQQ&oe=69ACC248', span: 'col-span-2 row-span-2' },
+        { src: 'https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/604719355_122148771962940477_3114987662466566794_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tNaCwUVymS8Q7kNvwE0XcJ5&_nc_oc=Adntk2qowAZzJ8eAgCRjnpDGfWNr8ZdGQE8NFQeG-aMbeneU-eKO3ZxUzRVDdN-4u5c&_nc_zt=23&_nc_ht=scontent.fsgn5-11.fna&_nc_gid=i9abc2u4Ea89Ud4mQKoWvA&_nc_ss=8&oh=00_Afx7BDo-6hNJ8KpPgcxtPvphKQoPV4HMzeWpBFgYX_-z4g&oe=69ACD16C', span: 'col-span-1' },
+        { src: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/585435224_122142486422940477_8642009094998979973_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=AXkhIryEwYQQ7kNvwEdtDe7&_nc_oc=AdkhW-wnmaCwBPLl1kzN_H5lEdgzG7qEKZ8jopiZwL3CBG3SxxPaN-Yxv3Jfy1HD-uY&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=4EwymHqqnlXoCqVVa5lPBA&_nc_ss=8&oh=00_Afwp2OD2tjCemLtvLCKPdApoNeZ7TagI8VXX9vv4a-970g&oe=69ACCE81', span: 'col-span-1' },
+        { src: 'https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/585801698_122142156854940477_6783624498096072032_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ROAeAsTS3jAQ7kNvwGo12bA&_nc_oc=AdkKe7wyRl9wpHi9-WHar8_CFb-Dy3umdLSlLeRFsbYS9FZTBNV0UswU0eGbkAFPlTE&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=krtR7XGCRjo3rR7DViGT8Q&_nc_ss=8&oh=00_Afwn1tKZMB9Oe59td_YpLOrzl_5kyUoDk05RY8dTtP8qSA&oe=69ACEB01', span: 'col-span-2 row-span-1' },
+      ].map((photo, i) => (
+        <GalleryItem key={i} src={photo.src} span={photo.span} index={i} />
+      ))}
+    </div>
+
+    {/* CTA */}
+    <ScrollReveal>
+      <div className="mt-10 text-center">
+        <a href="https://www.facebook.com/ritarachgia/photos" target="_blank" rel="noopener noreferrer"
+          className="inline-flex items-center gap-3 px-7 py-3.5 rounded-full text-sm tracking-wider uppercase font-medium text-rita-cream/70 hover:text-rita-cream transition-all duration-300 group"
+          style={{ border: '1px solid rgba(58,54,51,0.8)', background: '#1e1c1b' }}>
+          <span>Xem thêm trên Facebook</span>
+          <FiArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
+    </ScrollReveal>
+  </div>
+</section>
       {/* ── TESTIMONIALS ── */}
       <section className="py-24 px-6" style={{ background: '#161514' }}>
         <div className="max-w-7xl mx-auto">
@@ -358,6 +404,81 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
     </div>
+  )
+}
+function GalleryItem({ src, span, index }) {
+  const [hovered, setHovered] = useState(false)
+  const [lightbox, setLightbox] = useState(false)
+
+  return (
+    <>
+      <motion.div
+        className={`relative overflow-hidden rounded-2xl cursor-pointer ${span}`}
+        style={{ border: '1px solid rgba(58,54,51,0.6)' }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: '-40px' }}
+        transition={{ duration: 0.6, delay: index * 0.06 }}
+        onHoverStart={() => setHovered(true)}
+        onHoverEnd={() => setHovered(false)}
+        whileHover={{ borderColor: 'rgba(232,87,122,0.45)' }}
+        onClick={() => setLightbox(true)}
+      >
+        <motion.img src={src} alt="" className="w-full h-full object-cover"
+          animate={{ scale: hovered ? 1.08 : 1 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }} />
+
+        {/* Hover overlay */}
+        <motion.div className="absolute inset-0 flex items-center justify-center"
+          style={{ background: 'rgba(232,87,122,0.25)', backdropFilter: 'blur(2px)' }}
+          initial={{ opacity: 0 }} animate={{ opacity: hovered ? 1 : 0 }}
+          transition={{ duration: 0.2 }}>
+          <motion.div
+            className="w-12 h-12 rounded-full flex items-center justify-center"
+            style={{ background: 'rgba(232,87,122,0.9)' }}
+            initial={{ scale: 0.5 }} animate={{ scale: hovered ? 1 : 0.5 }}
+            transition={{ duration: 0.25 }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+            </svg>
+          </motion.div>
+        </motion.div>
+
+        {/* Pink corner accent */}
+        <div className="absolute top-0 right-0 w-8 h-8 opacity-0 group-hover:opacity-100"
+          style={{ background: 'linear-gradient(135deg, transparent 50%, rgba(232,87,122,0.4) 50%)' }} />
+      </motion.div>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {lightbox && (
+          <motion.div
+            className="fixed inset-0 z-[9999] flex items-center justify-center p-6"
+            style={{ background: 'rgba(4,3,3,0.95)', backdropFilter: 'blur(20px)' }}
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            onClick={() => setLightbox(false)}
+          >
+            <motion.img src={src} alt=""
+              className="max-w-full max-h-full object-contain rounded-2xl"
+              style={{ maxWidth: '90vw', maxHeight: '90vh', boxShadow: '0 40px 100px rgba(0,0,0,0.8)' }}
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 380, damping: 34 }}
+              onClick={e => e.stopPropagation()}
+            />
+            <motion.button
+              className="absolute top-6 right-6 w-10 h-10 rounded-full flex items-center justify-center text-white"
+              style={{ background: 'rgba(40,37,35,0.9)', border: '1px solid rgba(58,54,51,0.8)' }}
+              whileHover={{ scale: 1.1, rotate: 90 }} whileTap={{ scale: 0.9 }}
+              onClick={() => setLightbox(false)}>
+              ✕
+            </motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   )
 }

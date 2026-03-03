@@ -56,9 +56,9 @@ export default function Footer() {
             <h4 className="text-xs tracking-[0.3em] uppercase text-rita-pink mb-6">Thông Tin</h4>
             <div className="flex flex-col gap-4">
               {[
-                { icon: FiMapPin, text: 'Rạch Giá, Kiên Giang' },
-                { icon: FiClock, text: '07:30 AM — 10:30 PM' },
-                { icon: FiPhone, text: 'Liên hệ qua Facebook' },
+                { icon: FiMapPin, text: 'L11 Huỳnh Thúc Kháng - Rạch Giá, Kiên Giang' },
+                { icon: FiClock, text: '07:30 AM — 22:30 PM' },
+                { icon: FiPhone, text: '0932 991 993' },
               ].map(({ icon: Icon, text }, i) => (
                 <div key={i} className="flex items-center gap-3 text-rita-muted text-sm">
                   <Icon size={14} className="text-rita-pink/60 flex-shrink-0" />
@@ -71,8 +71,8 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
           style={{ borderTop: '1px solid rgba(58,54,51,0.6)' }}>
-          <p className="text-rita-muted/40 text-xs tracking-widest">© 2024 RITA CAFE & BISTRO.</p>
-          <p className="text-rita-muted/25 text-xs">Rạch Giá, Kiên Giang, Việt Nam</p>
+          <p className="text-rita-muted/40 text-xs tracking-widest">© 2025 RITA CAFE & BISTRO.</p>
+          <p className="text-rita-muted/25 text-xs">L11 Huỳnh Thúc Kháng - Rạch Giá, Kiên Giang</p>
         </div>
       </div>
     </footer>

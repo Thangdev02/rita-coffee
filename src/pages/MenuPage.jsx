@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { getCategories, getMenuItems } from '../services/api'
 import MenuCard from '../components/MenuCard'
 import ScrollReveal from '../components/ScrollReveal'
-import { FiArrowRight } from 'react-icons/fi'
 
 export default function MenuPage() {
   const [categories, setCategories] = useState([])
@@ -83,7 +82,7 @@ export default function MenuPage() {
           <FilterBtn active={activeFilter === 'all'} onClick={() => setActiveFilter('all')}>Tất Cả</FilterBtn>
           {categories.filter(c => c.slug !== 'dino-kids' && c.slug !== 'an-sang').map(cat => (
             <FilterBtn key={cat.slug} active={activeFilter === cat.slug} onClick={() => setActiveFilter(cat.slug)}>
-              {cat.icon} {cat.name}
+             {cat.name}
             </FilterBtn>
           ))}
         </motion.div>

@@ -51,7 +51,6 @@ export default function CategoryPage() {
               className="inline-flex items-center gap-2 text-rita-muted hover:text-rita-cream text-sm mb-8 transition-colors">
               <FiArrowLeft size={14} /> Quay lại Menu
             </Link>
-            <div className="text-5xl mb-4">{category.icon}</div>
             <h1 className="font-heading leading-none mb-4" style={{
               fontSize: 'clamp(56px, 11vw, 120px)',
               background: 'linear-gradient(135deg, #e8577a, #f07898)',
@@ -65,31 +64,7 @@ export default function CategoryPage() {
       </div>
 
       {/* Ingredient info */}
-      {category.beanInfo && (
-        <div style={{ background: '#161514', borderBottom: '1px solid rgba(58,54,51,0.7)' }}>
-          <div className="max-w-7xl mx-auto px-6 py-8">
-            <ScrollReveal>
-              <motion.div
-                className="flex flex-col md:flex-row items-start md:items-center gap-6 rounded-2xl p-6"
-                style={{ background: '#1e1c1b', border: '1px solid rgba(232,87,122,0.2)' }}
-                whileInView={{ borderColor: 'rgba(232,87,122,0.35)' }}
-              >
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl flex-shrink-0"
-                  style={{ background: 'rgba(232,87,122,0.12)', border: '1px solid rgba(232,87,122,0.2)' }}>
-                  🌿
-                </div>
-                <div>
-                  <h3 className="text-rita-pink text-xs tracking-[0.3em] uppercase mb-1">Nguồn Nguyên Liệu</h3>
-                  <p className="text-rita-muted text-sm leading-relaxed">{category.beanInfo}</p>
-                </div>
-                <div className="md:ml-auto flex-shrink-0">
-                  <div className="w-3 h-3 rounded-full animate-pulse bg-rita-pink" />
-                </div>
-              </motion.div>
-            </ScrollReveal>
-          </div>
-        </div>
-      )}
+      
 
       {/* Dino special */}
       {isDino && (

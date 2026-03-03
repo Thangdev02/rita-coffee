@@ -90,7 +90,6 @@ export default function AboutPage() {
       <section className="py-32 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <ScrollReveal direction="left">
-            {/* Collage of 2 photos */}
             <div className="relative h-[560px]">
               <div className="absolute inset-0 opacity-[0.06] rounded-full blur-[80px]"
                 style={{ background: '#e8577a', width: '70%', height: '70%', left: '15%', top: '15%' }} />
@@ -104,7 +103,6 @@ export default function AboutPage() {
                 <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/573282457_122137331264940477_7514977026506169285_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=6QsAflJkIa8Q7kNvwHl_bUH&_nc_oc=Adll1nqXoR4kc8k7w6QsM8TZOYiwbpdsP0Wmso_3qoDVvk-P4N9lQ6UN1gcn001EpObdIfoM7RpWL3UwBFZReKq4&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=A0HSs11-wwygWa9Vu3H9wg&_nc_ss=8&oh=00_AfyzE5RrSAQXP5x465Wx-zY6BUPoVtiP2fQt-i-kDUXFiA&oe=69AB60EF"
                   alt="Coffee" className="w-full h-full object-cover" />
               </div>
-              {/* Floating quote */}
               <motion.div
                 className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-2xl p-5 text-center z-10 w-48"
                 style={{ background: 'rgba(14,13,13,0.9)', border: '1px solid rgba(232,87,122,0.35)', backdropFilter: 'blur(12px)' }}
@@ -128,14 +126,12 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-rita-muted leading-relaxed">
                 <p>
-                  RITA Cafe & Bistro không chỉ là một quán cà phê — đó là không gian sống, là nơi người Rạch Giá có thể đến để tìm thấy bình yên giữa nhịp sống hối hả.
+                 <strong className="text-rita-cream"> RITA Cafe & Bistro</strong>  không chỉ là một quán cà phê — đó là không gian sống, là nơi người Rạch Giá có thể đến để tìm thấy bình yên giữa nhịp sống hối hả.
                 </p>
                 <p>
                   Chúng tôi tin rằng một tách cà phê ngon không chỉ đến từ hạt cà phê tốt, mà còn từ tâm huyết của người pha chế, từ không gian ấm áp và từ nụ cười của những người phục vụ.
                 </p>
-                <p>
-                  Từ hạt <strong className="text-rita-cream">Arabica Đà Lạt</strong> đến bột <strong className="text-rita-cream">Matcha Uji Nhật Bản</strong> — mọi nguyên liệu đều được chọn lọc kỹ càng để đảm bảo hương vị tốt nhất cho bạn.
-                </p>
+              
               </div>
 
               <div className="grid grid-cols-2 gap-4 mt-10">
@@ -160,107 +156,51 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── TIMELINE ── */}
-      <section className="py-24 px-6" style={{ background: '#161514' }}>
-        <div className="max-w-4xl mx-auto">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <span className="text-xs tracking-[0.3em] uppercase text-rita-pink">Hành Trình</span>
-              <h2 className="font-heading text-5xl text-rita-cream mt-4">Từng Bước Phát Triển</h2>
-            </div>
-          </ScrollReveal>
-
-          <div className="relative">
-            {/* Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px md:left-1/2" style={{ background: 'rgba(232,87,122,0.2)' }} />
-
-            <div className="space-y-12">
-              {timeline.map(({ year, title, desc }, i) => (
-                <ScrollReveal key={i} delay={i * 0.1} direction={i % 2 === 0 ? 'left' : 'right'}>
-                  <div className={`relative flex items-center gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} pl-20 md:pl-0`}>
-                    {/* Year bubble */}
-                    <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center z-10"
-                      style={{ background: '#e8577a', boxShadow: '0 0 20px rgba(232,87,122,0.5)' }}>
-                      <div className="w-2 h-2 bg-white rounded-full" />
-                    </div>
-
-                    <div className={`md:w-1/2 ${i % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                      <div className="text-rita-pink text-sm font-mono font-bold tracking-widest mb-2">{year}</div>
-                      <div className="font-heading text-2xl text-rita-cream mb-2">{title}</div>
-                      <div className="text-rita-muted text-sm leading-relaxed">{desc}</div>
-                    </div>
-                    <div className="hidden md:block md:w-1/2" />
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* ── PHOTO GALLERY ── */}
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <ScrollReveal>
-            <div className="text-center mb-12">
-              <span className="text-xs tracking-[0.3em] uppercase text-rita-pink">Không Gian</span>
-              <h2 className="font-heading text-5xl text-rita-cream mt-4">Một Thoáng RITA</h2>
-            </div>
-          </ScrollReveal>
+    <section className="py-24 px-6 bg-[#1f1b19]">
+  <div className="max-w-7xl mx-auto">
+    <ScrollReveal>
+      <div className="text-center mb-16">
+        <span className="text-xs tracking-[0.3em] uppercase text-rita-pink">
+          Không Gian
+        </span>
+        <h2 className="font-heading text-5xl text-rita-cream mt-4">
+          Một Thoáng RITA
+        </h2>
+      </div>
+    </ScrollReveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {gallery.map((img, i) => (
-              <ScrollReveal key={i} delay={i * 0.07} direction="scale">
-                <motion.div
-                  className="relative overflow-hidden rounded-2xl cursor-hover"
-                  style={{ height: i === 0 || i === 5 ? '320px' : '220px', border: '1px solid rgba(58,54,51,0.7)' }}
-                  whileHover={{ scale: 1.02, borderColor: 'rgba(232,87,122,0.4)' }}
-                >
-                  <img src={img} alt={`Rita ${i + 1}`}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-400"
-                    style={{ background: 'linear-gradient(135deg, rgba(232,87,122,0.2), transparent)' }} />
-                </motion.div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Masonry layout */}
+    <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+      {gallery.map((img, i) => (
+        <ScrollReveal key={i} delay={i * 0.07} direction="scale">
+          <motion.div
+            whileHover={{ scale: 1.02, y: -4 }}
+            className="relative overflow-hidden rounded-3xl group 
+                       border border-[#3a3633] 
+                       hover:border-rita-pink/40
+                       transition-all duration-500 break-inside-avoid"
+          >
+            <img
+              src={img}
+              alt={`Rita ${i + 1}`}
+              className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
 
-      {/* ── TEAM ── */}
-      <section className="py-24 px-6" style={{ background: '#161514' }}>
-        <div className="max-w-7xl mx-auto">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <span className="text-xs tracking-[0.3em] uppercase text-rita-pink">Con Người</span>
-              <h2 className="font-heading text-5xl text-rita-cream mt-4">Đội Ngũ RITA</h2>
-              <p className="text-rita-muted mt-4 max-w-sm mx-auto text-sm">Những con người tâm huyết tạo nên hương vị và không gian của RITA</p>
-            </div>
-          </ScrollReveal>
+            <div className="absolute inset-0 bg-gradient-to-tr 
+                            from-rita-pink/20 to-transparent 
+                            opacity-0 group-hover:opacity-100 
+                            transition-opacity duration-500" />
+          </motion.div>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map(({ name, role, img, quote }, i) => (
-              <ScrollReveal key={i} delay={i * 0.12} direction="up">
-                <motion.div
-                  className="rounded-3xl overflow-hidden text-center cursor-hover"
-                  style={{ background: '#1e1c1b', border: '1px solid rgba(58,54,51,0.8)' }}
-                  whileHover={{ y: -10, borderColor: 'rgba(232,87,122,0.4)', boxShadow: '0 30px 80px rgba(232,87,122,0.1)' }}
-                >
-                  <div className="relative h-64 overflow-hidden">
-                    <img src={img} alt={name} className="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #1e1c1b 0%, transparent 50%)' }} />
-                  </div>
-                  <div className="p-6 -mt-4 relative z-10">
-                    <h3 className="font-heading text-2xl text-rita-cream">{name}</h3>
-                    <p className="text-rita-pink text-xs tracking-widest uppercase mt-1 mb-4">{role}</p>
-                    <p className="text-rita-muted text-sm italic">"{quote}"</p>
-                  </div>
-                </motion.div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
       {/* ── CONTACT / VISIT ── */}
       <section className="py-24 px-6">
@@ -321,6 +261,28 @@ export default function AboutPage() {
           </ScrollReveal>
         </div>
       </section>
+      <div className="relative h-[400px] md:h-[440px] overflow-hidden p-0"
+   >
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.91316635733!2d105.07858871094975!3d10.024024272578824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b3002319607f%3A0xd89865f1f3e9eb14!2sRita%20Cafe%20%26%20Bistro!5e0!3m2!1svi!2s!4v1772550170417!5m2!1svi!2s"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className=""
+  ></iframe>
+
+  {/* Overlay gradient nhẹ cho đúng vibe */}
+  <div className="absolute inset-0 pointer-events-none"
+       style={{
+         background:
+           "linear-gradient(135deg, rgba(14,13,13,0.5), transparent 60%)"
+       }}
+  />
+</div>
     </div>
   )
 }

@@ -170,7 +170,6 @@ export default function Navbar() {
                                   onMouseEnter={e => e.currentTarget.style.background = 'rgba(232,87,122,0.07)'}
                                   onMouseLeave={e => e.currentTarget.style.background = 'rgba(18,17,16,0.98)'}
                                 >
-                                  <span className="text-2xl flex-shrink-0">{cat.icon}</span>
                                   <div className="min-w-0">
                                     <div
                                       className="text-sm font-medium transition-colors duration-200 truncate"
@@ -216,7 +215,7 @@ export default function Navbar() {
           {/* Right CTA + hamburger */}
           <div className="flex items-center gap-4">
             <motion.a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/ritarachgia/?rdid=CujuIBHS70MZezCF"
               target="_blank"
               rel="noreferrer"
               className="hidden md:flex items-center gap-2 px-5 py-2 text-xs tracking-widest uppercase rounded-full transition-all duration-300"
@@ -224,7 +223,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.05, background: '#e8577a', color: '#fff' }}
               whileTap={{ scale: 0.95 }}
             >
-              Đặt Bàn
+              Liên Hệ RITA
             </motion.a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -279,7 +278,7 @@ export default function Navbar() {
                   onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(232,87,122,0.5)'; e.currentTarget.style.color = '#e8577a' }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(58,54,51,0.9)'; e.currentTarget.style.color = 'rgba(138,128,120,0.9)' }}
                 >
-                  {cat.icon} {cat.name}
+                 {cat.name}
                 </Link>
               ))}
             </motion.div>
