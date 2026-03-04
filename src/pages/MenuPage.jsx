@@ -21,10 +21,10 @@ export default function MenuPage() {
   return (
     <div className="bg-rita-black min-h-screen">
       {/* Hero */}
-      <div className="relative pt-28 pb-20 overflow-hidden">
+      <div className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=80"
-            alt="Menu" className="w-full h-full object-cover opacity-15" />
+          <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/573282457_122137331264940477_7514977026506169285_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=6QsAflJkIa8Q7kNvwHm55GP&_nc_oc=AdlJ95jhbWY6J6Jy_1kY5QLLj-5cR2Mjod_c4_6iraNYP7jWgB2Pfy0q7iJu9OfBfW0&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=JaJZEYfF_zALn0r-iLzoZA&_nc_ss=8&oh=00_Afw0bWE3iryVkZCAM6nBABH052pU-hJkUoE1SrTpVf5SMg&oe=69ADCBAF"
+            alt="Menu" className="w-full h-full object-cover " />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent, #0e0d0d)' }} />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">

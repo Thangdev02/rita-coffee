@@ -75,9 +75,9 @@
     "dinoPrice": 50000
   },
   "testimonials": [
-    { "id": 1, "name": "Phương Dung Hoàng", "text": "100đ cho quán không nhưng! Anh chị nhân viên quán siêu dễ thương luôn! Hỗ trợ khách nhiệt tình, nhất là ở trên lầu khu vui chơi của các con í!", "rating": 5, "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXHoecBQRMmbnD9LT3RZ92DBwb5d6VCAtALynAF-PfyD8DcyBKWUw=w144-h144-p-rp-mo-br100" },
-    { "id": 2, "name": "Tram M.I.B", "text": "Quán rộng rãi đó, có chỗ chơi cho em bé nữa, nước và bánh ngon ổn nè, mấy bạn nhân viên dễ thương", "rating": 5, "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVRjI9vDeqW-hwZwIouLOCn08JVG4NmNfdmva72DEkWfPL4Yj5BvA=w144-h144-p-rp-mo-ba4-br100" },
-    { "id": 3, "name": "Như Tiên Lê", "text": "Có khu vui chơi ở quán cafe giá rẻ, nước ngon dễ thương", "rating": 5, "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKA1P_rTjHDUbsdUInsrWJ9UDYTj1nVeF6wB6gW7aDjFNHoIQ=w144-h144-p-rp-mo-br100" },
-    { "id": 4, "name": "Liêm Phạm", "text": "Không gian quán nhẹ nhàng, chill. Đồ uống ngon", "rating": 4, "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVqwD6yDrlNC9xRAwz6-uhZ-PdVbwJ6J1k83UyxcTpmAYcix8C0=w144-h144-p-rp-mo-ba3-br100" }
+    { "id": 1, "name": "Phương Dung Hoàng", "text": "100đ cho quán không nhưng! Anh chị nhân viên quán siêu dễ thương luôn! Hỗ trợ khách nhiệt tình, nhất là ở trên lầu khu vui chơi của các con í!", "rating": 5, "avatar": "/cus1.png" },
+    { "id": 2, "name": "Tram M.I.B", "text": "Quán rộng rãi đó, có chỗ chơi cho em bé nữa, nước và bánh ngon ổn nè, mấy bạn nhân viên dễ thương", "rating": 5, "avatar": "/cus2.png" },
+    { "id": 3, "name": "Như Tiên Lê", "text": "Có khu vui chơi ở quán cafe giá rẻ, nước ngon dễ thương", "rating": 5, "avatar": "/cus3.png" },
+    { "id": 4, "name": "Liêm Phạm", "text": "Không gian quán nhẹ nhàng, chill. Đồ uống ngon", "rating": 4, "avatar": "/cus4.png" }
   ]
 }

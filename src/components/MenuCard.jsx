@@ -83,10 +83,7 @@ export default function MenuCard({ item, index = 0 }) {
           <p className="text-rita-muted text-xs leading-relaxed mb-3 line-clamp-2">{item.description}</p>
           <div className="flex items-center justify-between">
             <span className="price-badge">{formatPrice(item.price)}</span>
-            <div className="flex gap-1.5">
-              {item.hot && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: 'rgba(255,120,50,0.12)', color: '#ff9060' }}>☕</span>}
-              {item.iced && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: 'rgba(80,160,255,0.1)', color: '#80c0ff' }}>🧊</span>}
-            </div>
+           
           </div>
         </div>
         <motion.div className="absolute inset-0 rounded-2xl pointer-events-none"
