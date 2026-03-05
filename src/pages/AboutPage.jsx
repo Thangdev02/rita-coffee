@@ -72,10 +72,7 @@ export default function AboutPage() {
               </motion.div>
             ))}
 
-            <motion.p className="text-rita-muted text-xl mt-8 max-w-lg leading-relaxed"
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }}>
-              Hành trình từ một giấc mơ nhỏ đến không gian cộng đồng yêu thích tại Rạch Giá
-            </motion.p>
+          
           </motion.div>
         </motion.div>
 
@@ -136,10 +133,10 @@ export default function AboutPage() {
 
               <div className="grid grid-cols-2 gap-4 mt-10">
                 {[
-                  { num: '50+', label: 'Thức uống' },
+                  { num: '25+', label: 'Thức uống' },
                   { num: '1000+', label: 'Khách/tháng' },
-                  { num: '5★', label: 'Google Rating' },
-                  { num: '2024', label: 'Thành lập' },
+                  { num: '4.9★', label: 'Google Rating' },
+                  { num: '2025', label: 'Thành lập' },
                 ].map(({ num, label }) => (
                   <div key={label} className="p-5 rounded-2xl text-center"
                     style={{ background: '#1e1c1b', border: '1px solid rgba(58,54,51,0.8)' }}>

@@ -263,7 +263,7 @@ export default function HomePage() {
       </section>
 
       {/* ── INFO CARDS ── */}
-      <section className="py-20 px-6">
+      {/* <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             { icon: FiMapPin, title: 'Địa Chỉ', value: 'L11-Huỳnh Thúc Kháng, Rạch Giá', sub: 'Gần trung tâm thành phố', color: '#e8577a' },
@@ -287,14 +287,14 @@ export default function HomePage() {
             </ScrollReveal>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ── DINO PROMO ── */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div className="absolute inset-0">
           <img src="https://scontent.fvkg1-1.fna.fbcdn.net/v/t39.30808-6/602905158_122147648816940477_6571202529164626722_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=CTjx3He6h7IQ7kNvwEsceKc&_nc_oc=AdnEF0MqeqWibW0Z9z1PdQFzfVMAlkI8eEenUIEv4C9G84jcOCHyj0_PRIZN-Mw8BYcCApJcMEQ2pezs1Uxvqgi0&_nc_zt=23&_nc_ht=scontent.fvkg1-1.fna&_nc_gid=9zqAE9FvZXd55pw1w9gtbQ&_nc_ss=8&oh=00_Afzc0JfEYl6k3utfHswEAAF8AqcMxZvktAvt9mYS2bvfuA&oe=69AB5246"
             alt="Dino" className="w-full h-full object-cover opacity-30" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(14,13,13,0.95) 40%, rgba(14,13,13,0.7) 100%)' }} />
+          <div className="absolute inset-0"  />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto">
           <ScrollReveal>
@@ -317,7 +317,7 @@ export default function HomePage() {
               </div>
               <Link to="/dino"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-green-500 text-white font-medium tracking-wider text-sm uppercase hover:bg-green-400 transition-all duration-300 rounded-full">
-                Tìm Hiểu Thêm <FiArrowRight />
+               Xem Không Gian Quán <FiArrowRight />
               </Link>
             </div>
           </ScrollReveal>

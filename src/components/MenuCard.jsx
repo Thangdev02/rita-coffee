@@ -41,7 +41,7 @@ export default function MenuCard({ item, index = 0 }) {
         whileHover={{ y: -6, borderColor: 'rgba(232,87,122,0.4)', transition: { duration: 0.3 } }}
         onClick={() => setShowModal(true)}
       >
-        <div className="relative h-48 overflow-hidden" style={{ background: '#161514' }}>
+        <div className="relative h-80 overflow-hidden" >
           {thumbImage ? (
             <motion.img src={thumbImage} alt={item.name}
               className="w-full h-full object-cover"
@@ -53,7 +53,7 @@ export default function MenuCard({ item, index = 0 }) {
               <span className="text-xs" style={{ color: 'rgba(138,128,120,0.3)' }}>Chưa có hình</span>
             </div>
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1e1c1b]/80 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1e1c1b]/30 via-transparent to-transparent" />
           {tag && (
             <div className="absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-medium"
               style={{ background: tag.bg, color: tag.text }}>{tag.label}</div>
@@ -156,7 +156,7 @@ function DetailModal({ item, images, tag, liked, onLike, onClose }) {
 
           {/* Gradient đậm phía dưới → info nổi lên */}
           <div className="absolute inset-0 pointer-events-none" style={{
-            background: 'linear-gradient(to top, rgba(8,7,7,1) 0%, rgba(8,7,7,0.55) 28%, rgba(8,7,7,0.08) 60%, transparent 100%)'
+            background: 'linear-gradient(to top, rgba(8,7,7,1) 0%, rgba(8,7,7,0.2) 28%, rgba(8,7,7,0.01) 100%, transparent 100%)'
           }} />
 
           {/* Top bar */}

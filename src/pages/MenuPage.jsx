@@ -37,8 +37,8 @@ export default function MenuPage() {
             }}>
               MENU
             </h1>
-            <p className="text-rita-muted mt-6 max-w-md mx-auto text-sm">
-              Khám phá thế giới hương vị phong phú — từ espresso đậm đà đến matcha Nhật Bản tinh tế
+            <p className="text-white mt-6 max-w-md mx-auto text-md">
+              Khám phá thế giới hương vị phong phú — Tham khảo menu để chọn món yêu thích của bạn khi đến RITA nhé!
             </p>
           </motion.div>
         </div>
@@ -87,7 +87,7 @@ export default function MenuPage() {
           ))}
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {filtered.map((item, i) => <MenuCard key={item.id} item={item} index={i} />)}
         </div>
       </div>
