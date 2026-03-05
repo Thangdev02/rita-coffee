@@ -298,11 +298,7 @@ export default function KidsZonePage() {
 
               {/* Dino */}
               <div className="pt-10 pb-2 text-center">
-                <motion.div className="text-6xl"
-                  animate={{ y: [0, -8, 0], rotate: [0, -5, 5, 0] }}
-                  transition={{ repeat: Infinity, duration: 3.5 }}>
-                  🦕
-                </motion.div>
+              
               </div>
 
               <div className="px-10 pb-10 text-center">
@@ -340,12 +336,10 @@ export default function KidsZonePage() {
                 <Link to="/"
                   className="block w-full py-4 rounded-full text-black font-semibold text-sm uppercase tracking-wider text-center transition-all duration-300 hover:scale-[1.02]"
                   style={{ background: `linear-gradient(135deg, ${G1}, ${G2})`, boxShadow: `0 8px 30px rgba(74,222,128,0.25)` }}>
-                  🎟 Đến Rita Ngay
+                  Đến Rita Ngay
                 </Link>
 
-                <p className="text-xs mt-5" style={{ color: 'rgba(138,128,120,0.4)' }}>
-                  * Trẻ dưới 2 tuổi miễn phí · Giờ mở cửa 07:30 – 22:30
-                </p>
+               
               </div>
             </motion.div>
           </ScrollReveal>
@@ -423,7 +417,7 @@ export default function KidsZonePage() {
                 Hẹn Gặp Bé<br /><span style={{ color: G1 }}>Tại RITA!</span>
               </h2>
               <p className="text-rita-muted leading-relaxed mb-10 max-w-sm">
-                Mang bé đến RITA — nơi cà phê ngon cho ba mẹ, và cả một thế giới khám phá cho bé 🌿
+                Mang bé đến RITA — nơi cà phê ngon cho ba mẹ, và cả một thế giới khám phá cho bé
               </p>
               <Link to="/"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-medium tracking-wider text-sm uppercase text-black transition-all duration-300 hover:scale-105"
